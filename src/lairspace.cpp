@@ -19,8 +19,7 @@ int main(int argc, char ** argv)
     SDL_Texture * texture = SDL_CreateTextureFromSurface(renderer, image);
 	int shipW=image->w;
 	int shipH=image->h;    
-	shipPos= { (SCREEN_HEIGHT*.5+shipW),(SCREEN_HEIGHT*.5),50,50 };	
-	cout << SCREEN_WIDTH << SCREEN_HEIGHT << SCREEN_WIDTH*.5 << SCREEN_HEIGHT*.5 <<endl; 
+	shipPos= { ((SCREEN_HEIGHT/2)+shipW),((SCREEN_HEIGHT/2)-shipH),shipW,shipH };	 
     //game loop
     while (!quit)
     {
